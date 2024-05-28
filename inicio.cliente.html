@@ -21,6 +21,19 @@
             text-align: center;
         }
 
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -52,9 +65,11 @@
 <body>
     <div class="container">
         <h1>Bienvenido</h1>
-        <button class="button" onclick="redirectToWhatsApp('+56940246069')">Enviar mensaje por WhatsApp</button>
-        <button class="button" onclick="redirectToEmail('anaiss.zam@gmail.com')">Enviar correo electrónico</button>
-        <a href="https://calendly.com/edua-norambuena/horas-disponibles" target="_blank" class="button">Cita</a>
+        <div class="button-container">
+            <button class="button" onclick="redirectToWhatsApp('+56940246069')">Enviar mensaje por WhatsApp</button>
+            <button class="button" onclick="redirectToEmail('anaiss.zam@gmail.com')">Enviar correo electrónico</button>
+            <a href="https://calendly.com/edua-norambuena/horas-disponibles" target="_blank" class="button">Cita</a>
+        </div>
     </div>
 
     <!-- Reloj -->
