@@ -14,5 +14,5 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
 document.getElementById('clienteBtn').addEventListener('click', function() {
     // Redirigir a la página inicio.html
-    window.location.href = './inicio.html';
+    window.location.href = './inicio.cliente.html';
 });
