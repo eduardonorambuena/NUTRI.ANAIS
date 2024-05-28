@@ -19,6 +19,11 @@
 
         .container {
             text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+            max-width: 400px;
         }
 
         .button {
@@ -32,26 +37,22 @@
             text-decoration: none;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
         }
 
         .button:hover {
             background-color: #7c4dff; /* Cambia el color al pasar el cursor */
         }
 
-        #clock {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-        }
-
         input[type="number"] {
             width: 100%;
             padding: 10px;
             margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
         }
 
         #resultado {
@@ -68,13 +69,15 @@
         <a href="https://calendly.com/edua-norambuena/horas-disponibles" target="_blank" class="button">Cita</a>
 
         <!-- Calculadora de IMC -->
-        <h2>Calculadora de IMC</h2>
-        <label for="peso">Peso (kg):</label>
-        <input type="number" id="peso" placeholder="Ingrese su peso en kg">
-        <label for="altura">Altura (m):</label>
-        <input type="number" id="altura" placeholder="Ingrese su altura en metros">
-        <button onclick="calcularIMC()">Calcular IMC</button>
-        <div id="resultado"></div>
+        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; margin-top: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+            <h2 style="margin-top: 0;">Calculadora de IMC</h2>
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" placeholder="Ingrese su peso en kg">
+            <label for="altura">Altura (m):</label>
+            <input type="number" id="altura" placeholder="Ingrese su altura en metros">
+            <button class="button" onclick="calcularIMC()">Calcular IMC</button>
+            <div id="resultado"></div>
+        </div>
     </div>
 
     <!-- Reloj -->
