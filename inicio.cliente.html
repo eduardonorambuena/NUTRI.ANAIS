@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Cliente</title>
+    <title>Inicio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,11 +19,6 @@
 
         .container {
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-            max-width: 400px;
         }
 
         .button {
@@ -37,13 +32,20 @@
             text-decoration: none;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            font-size: 16px;
-            font-weight: bold;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
         }
 
         .button:hover {
             background-color: #7c4dff; /* Cambia el color al pasar el cursor */
+        }
+
+        #clock {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
         }
     </style>
 </head>
