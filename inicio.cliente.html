@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Cliente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('imagenes/sandia.jpg'); /* Ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+            max-width: 400px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #6200ea; /* Color morado */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+        }
+
+        .button:hover {
+            background-color: #7c4dff; /* Cambia el color al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido</h1>
+        <button class="button" onclick="redirectToWhatsApp('+56940246069')">Enviar mensaje por WhatsApp</button>
+        <button class="button" onclick="redirectToEmail('anaiss.zam@gmail.com')">Enviar correo electrónico</button>
+        <a href="https://calendly.com/edua-norambuena/horas-disponibles" target="_blank" class="button">Cita</a>
+    </div>
+
+    <!-- Reloj -->
+    <div id="clock"></div>
+
+    <script>
+        function redirectToWhatsApp(phoneNumber) {
+            window.location.href = 'https://wa.me/' + phoneNumber;
+        }
+
+        function redirectToEmail(emailAddress) {
+            window.location.href = 'mailto:' + emailAddress;
+        }
+    </script>
+</body>
+</html>
